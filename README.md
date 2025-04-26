@@ -1,20 +1,12 @@
 # EX 4 : ELLIPSE DRAWING ALGORITHM
 
-NAME : MOHAMED NIZAMUDDIN A
-
-REG NO: 212224040194
-
 **AIM :**
-
 
 To  implement the Bresenham’s  algorithm for ellipse using a c coding.
 
-
 **EQUIPMENT REQUIRED:**
 
-
 ●	Hardware: Personal Computer (PC)
-
 
 ●	Software: C Compiler
 
@@ -36,8 +28,9 @@ Step 7 : stop.
 
 
 **Program :**
+NAME:MITHUN KUMAR.G REG NO : 212224230160
 
-```
+~~~
 #include "stdio.h" 
 #include "conio.h" 
 #include "math.h" 
@@ -47,7 +40,7 @@ main()
   int gd=DETECT,gm; 
   int xcenter,ycenter,rx,ry; 
   int p,x,y,px,py,rx1,ry1,rx2,ry2; 
-  initgraph(&gd,&gm,"c:\\turboc3\\bgi");
+  initgraph(&gd,&gm,"c:\\tc\\bgi"); 
   printf("Enter The Radius Value:\n"); 
   scanf("%d%d",&rx,&ry); 
   printf("Enter The xcenter and ycenter Values:\n"); 
@@ -81,8 +74,8 @@ x=0;
  
  
  
-p=(ry1*(x+0.5)*(x+0.5)+rx1*(y-1)*(y-1)-rx1*ry1);
-while(y>0)
+p=(ry1*(x+0.5)*(x+0.5)+rx1*(y-1)*(y-1)-rx1*ry1); 
+ while(y>0) 
   { 
    y=y-1; 
    py=py-rx2; 
@@ -107,18 +100,15 @@ int plotpoints(int xcenter,int ycenter,int x,int y)
   putpixel(xcenter+x,ycenter+y,6); 
   putpixel(xcenter-x,ycenter+y,6); 
   putpixel(xcenter+x,ycenter-y,6); 
-  putpixel(xcenter-x,ycenter-y,6);
-  return 0;
+  putpixel(xcenter-x,ycenter-y,6); 
  
 }
-```
-
+~~~
 
 **Output :**
 
-![ellipsegamedevlopment](https://github.com/user-attachments/assets/51b06629-23d3-4109-91e3-f236dba53d95)
-
+![Screenshot (10)](https://github.com/user-attachments/assets/be13350a-b18f-4dcc-908f-8dd5f028105d)
 
 **Result :**
 
-Thus the Bresenham’s  algorithm for ellipse using a c coding is implemented successfully .
+The Bresenham’s ellipse drawing algorithm was successfully implemented in C. The ellipse was accurately drawn based on the given center coordinates and radii.
